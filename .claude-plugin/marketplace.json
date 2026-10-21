@@ -1,0 +1,5 @@
+{
+  "name": "damonchandio",
+  "owner": {"name": "Damon Chandio"},
+  "plugins": [{"name": "jobcheck", "source": "./", "description": "Is this job ad real? Facts, not a vibe score."}]
+}

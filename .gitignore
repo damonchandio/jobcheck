@@ -1,0 +1,19 @@
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+*service_account*.json
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+# Node
+node_modules/
+dist/
+# Data, logs and models
+data/
+logs/
+*.log
+*.onnx
+*.bin

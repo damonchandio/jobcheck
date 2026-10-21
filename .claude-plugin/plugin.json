@@ -1,0 +1,9 @@
+{
+  "name": "jobcheck",
+  "version": "0.1.0",
+  "description": "Is this job ad real? Employer registry status, posting age, domain age, repost count. Facts, not a vibe score.",
+  "author": {"name": "Damon Chandio", "url": "https://github.com/damonchandio"},
+  "homepage": "https://github.com/damonchandio/jobcheck",
+  "license": "MIT",
+  "keywords": ["jobs", "ghost-jobs", "job-search", "companies-house", "scam", "career"]
+}
