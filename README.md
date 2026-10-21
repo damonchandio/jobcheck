@@ -1,5 +1,7 @@
 # jobcheck
 
+[![tests](https://github.com/damonchandio/jobcheck/actions/workflows/tests.yml/badge.svg)](https://github.com/damonchandio/jobcheck/actions/workflows/tests.yml) ![licence](https://img.shields.io/badge/licence-MIT-16A6F0) ![python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white) ![deps](https://img.shields.io/badge/dependencies-0-2ecc71) · [中文](README.zh-CN.md)
+
 **Paste a job URL. In seconds, with no account, it tells you whether the employer legally exists, how long the ad has really been open, and whether you are about to apply to a ghost.**
 
 Facts, not a vibe score. Every other ghost-job tool reads the wording and guesses. jobcheck checks the things that can be checked: the company register, the posting date the board embeds, the age of the employer's domain, and whether you have seen this exact ad before.
@@ -25,6 +27,19 @@ GHOST (high confidence): Senior AI Engineer at Example Talent Ltd
   ✗ seen 4 times since 2026-07-19
   → https://find-and-update.company-information.service.gov.uk/company/12345678
 ```
+
+## What I found when I pointed it at UK AI jobs
+
+321 live UK AI and data job ads from 42 employers' own job boards (Greenhouse, Ashby, Lever), checked on 21 October 2026, using each board's first-published date:
+
+| Open for | Share of ads |
+|---|---|
+| 30+ days | 69% |
+| 60+ days | 55% |
+| 90+ days | 45% |
+| 6+ months | 27% |
+
+Median: 70 days. 24 roles were live under two or more different links at the same time. Some long-open ads are genuine "always hiring" roles; the point is that you can't tell from the ad itself. Reproduce it with `python3 evals/uk_ai_ads.py scan-history.tsv` ([career-ops](https://github.com/santifer/career-ops) format).
 
 ## What it checks
 
